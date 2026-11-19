@@ -195,7 +195,35 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies
 
 ## Screenshots
 
-![Discover showing 3,788 ATT&CK-tagged hits](images/01-attack-tagged-hits.png)
+### Environment
+![Wazuh stack running in Docker](images/Screenshot%20%28100%29.png)
+
+### 1. ATT&CK tags in Wazuh
+![3,788 ATT&CK-tagged hits](images/Screenshot%20%28105%29.png)
+![Logons with descriptions and tactics](images/Screenshot%20%28106%29.png)
+
+### 2. Discovery through sudo
+![sudo discovery commands](images/Screenshot%20%28107%29.png)
+
+### 3. Persistence
+![labtest account alert](images/Screenshot%20%28108%29.png)
+![Cron timeline in syslog](images/Screenshot%20%28114%29.png)
+![logtest, cron line with no decoder](images/Screenshot%20%28117%29.png)
+![logtest, rule 2832 match](images/Screenshot%20%28118%29.png)
+![Agent file list, syslog missing](images/Screenshot%20%28120%29.png)
+![Crontab entry changed alert](images/Screenshot%20%28121%29.png)
+
+### 4. Credential Access (T1110.001)
+![35 authentication failure hits](images/Screenshot%20%28123%29.png)
+![31 October failed-logon burst](images/Screenshot%20%28125%29.png)
+![Rule 5503 mapped to T1110.001](images/Screenshot%20%28126%29.png)
+
+### 5. Windows PowerShell (T1059.001)
+![4,465 Windows agent alerts](images/Screenshot%20%28128%29.png)
+![Enabling process-creation auditing](images/Screenshot%20%28130%29.png)
+![Process-created events](images/Screenshot%20%28131%29.png)
+![Expanded Event 4688](images/Screenshot%20%28133%29.png)
+![whoami child process](images/Screenshot%20%28137%29.png)
 
 ## Disclaimer
 
